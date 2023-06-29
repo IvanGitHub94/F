@@ -23,7 +23,7 @@ public class FileHelper {
         String resultFileName = "";
         //files/books/file_name
         try {
-            Path path = Paths.get(BOOKS_UPLOAD_DIRECTORY + "/" + fileName).toAbsolutePath().normalize();
+            Path path = Paths.get(FILMS_UPLOAD_DIRECTORY + "/" + fileName).toAbsolutePath().normalize();
             if (!path.toFile().exists()) {
                 Files.createDirectories(path);
             }

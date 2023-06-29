@@ -26,5 +26,6 @@ public class UserDTO
     private RoleDTO role;
     private String changePasswordToken;
     private List<Long> userFilmsRent;
+    private List<Long> feedbackIds;
     private boolean isDeleted;
 }

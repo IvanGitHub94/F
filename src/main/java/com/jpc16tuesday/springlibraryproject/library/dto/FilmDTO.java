@@ -26,4 +26,6 @@ public class FilmDTO
     private Genre genre;
     private List<Long> directorIds;
     private List<DirectorDTO> directorInfo;
+    private List<Long> feedbackIds;
+    private List<FeedbackDTO> feedbacks;
 }

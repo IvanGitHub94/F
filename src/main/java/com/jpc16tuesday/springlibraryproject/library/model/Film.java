@@ -55,4 +55,7 @@ public class Film extends GenericModel {
 
     @OneToMany(mappedBy = "film")
     private List<FilmRentInfo> filmRentInfos;
+
+    @OneToMany(mappedBy = "film", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<Feedback> feedbacks;
 }

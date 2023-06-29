@@ -34,12 +34,12 @@ public class WebSecurityConfig {
                 //Настройка http-запросов - кому/куда можно/нельзя
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers(RESOURCES_WHITE_LIST.toArray(String[]::new)).permitAll()
-                        .requestMatchers(BOOKS_WHITE_LIST.toArray(String[]::new)).permitAll()
-                        .requestMatchers(AUTHORS_WHITE_LIST.toArray(String[]::new)).permitAll()
+                        .requestMatchers(FILMS_WHITE_LIST.toArray(String[]::new)).permitAll()
+                        .requestMatchers(DIRECTORS_WHITE_LIST.toArray(String[]::new)).permitAll()
                         .requestMatchers(USERS_WHITE_LIST.toArray(String[]::new)).permitAll()
-                        .requestMatchers(BOOKS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(ADMIN, LIBRARIAN)
-                        .requestMatchers(AUTHORS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(ADMIN, LIBRARIAN)
-                        .requestMatchers(USERS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(LIBRARIAN, USER)
+                        .requestMatchers(FILMS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(ADMIN, MODERATOR)
+                        .requestMatchers(DIRECTORS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(ADMIN, MODERATOR)
+                        .requestMatchers(USERS_PERMISSION_LIST.toArray(String[]::new)).hasAnyRole(MODERATOR, USER)
                         .anyRequest().authenticated()
                 )
                 //Настройка для входа в систему
