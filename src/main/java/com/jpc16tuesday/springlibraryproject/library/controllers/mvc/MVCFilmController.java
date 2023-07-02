@@ -88,7 +88,7 @@ public class MVCFilmController {
         return "films/updateFilm";
     }
 
-    @PostMapping
+    @PostMapping("/update")
     public String update(@ModelAttribute("filmForm") FilmDTO filmDTO) {
         filmService.update(filmDTO);
         return "redirect:/films";

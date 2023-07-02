@@ -34,7 +34,8 @@ public class Film extends GenericModel {
     @Column(name = "amount", nullable = false)
     private Integer amount;
 
-    @Column(name = "imdb", nullable = false)
+    //@Column(name = "imdb", nullable = false)
+    @Column(name = "imdb")
     private String imdb;
 
     @Column(name = "online_copy_path")
@@ -56,6 +57,6 @@ public class Film extends GenericModel {
     @OneToMany(mappedBy = "film")
     private List<FilmRentInfo> filmRentInfos;
 
-    @OneToMany(mappedBy = "film", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(mappedBy = "film"/*, cascade = {CascadeType.PERSIST, CascadeType.MERGE}*/)
     private List<Feedback> feedbacks;
 }

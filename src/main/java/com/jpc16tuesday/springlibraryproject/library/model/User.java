@@ -56,7 +56,8 @@ public class User extends GenericModel {
                     foreignKey = @ForeignKey(name = "FK_USERS_ROLES"))
         private Role role;
 
-        @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+        //@OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+        @OneToMany(mappedBy = "user")
         private List<FilmRentInfo> filmRentInfos;
 
         @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})

@@ -55,9 +55,17 @@ public class FilmMapper
     protected void mapSpecificFields(FilmDTO source, Film destination) {
         if (!Objects.isNull(source.getDirectorIds())) {
             destination.setDirectors(directorRepository.findAllById(source.getDirectorIds()));
-            destination.setFeedbacks(feedbackRepository.findAllById(source.getFeedbackIds()));
+            //destination.setFeedbacks(feedbackRepository.findAllById(source.getFeedbackIds()));
         } else {
             destination.setDirectors(Collections.emptyList());
+            //
+            //destination.setFeedbacks(Collections.emptyList());
+        }
+
+        if (!Objects.isNull(source.getFeedbackIds())) {
+            destination.setFeedbacks(feedbackRepository.findAllById(source.getFeedbackIds()));
+        } else {
+            destination.setFeedbacks(Collections.emptyList());
         }
     }
 

@@ -38,7 +38,7 @@ public class MailUtils {
                                                        final String subject,
                                                        final String text) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setFrom("libraryproject@bk.ru"); //TODO: Rewrite to config
+        mailMessage.setFrom("smirnov_i94@mail.ru");
         mailMessage.setTo(emails);
         mailMessage.setSubject(subject);
         mailMessage.setText(text);
