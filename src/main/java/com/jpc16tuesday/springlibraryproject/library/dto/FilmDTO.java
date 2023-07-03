@@ -20,7 +20,7 @@ public class FilmDTO
     private String publish;
     private Integer minutesCount;
     private Integer amount;
-    private String IMDB;
+    private String IMDB; // было IMDB, может проблема в стринг-типе
     private String onlineCopyPath;
     private String description;
     private Genre genre;

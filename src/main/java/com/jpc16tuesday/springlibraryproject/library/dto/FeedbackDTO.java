@@ -1,8 +1,11 @@
 package com.jpc16tuesday.springlibraryproject.library.dto;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+@ToString
+@Getter
+@Setter
+@NoArgsConstructor
 public class FeedbackDTO extends GenericDTO {
 
     private String nickname;

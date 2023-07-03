@@ -118,8 +118,10 @@
             <a th:if="${film.getAmount() > 0}" sec:authorize="!hasRole('ADMIN')" class="btn btn-primary"
                th:href="'/rent/film/' + ${film.id}">Прокат фильма</a>
             <a th:if="${film.getAmount() > 0}" sec:authorize="!hasRole('ADMIN')" class="btn btn-primary"
-               th:href="'/rent/film/' + ${film.id}">Оставить отзыв</a>
+               th:href="'/feedbacks/' + ${film.id}">Оставить отзыв</a>
             <!--переделать путь ^ !!! -->
+            <!--/Fdd-feedback/{filmId}-->
+            <!--th:href="@{/feedbacks/add}">Оставить отзыв</a> БЫЛО!!!!!-->
             <button type="button" class="btn btn-secondary" onclick="window.history.back()">Назад</button>
         </div>
     </div>

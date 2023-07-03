@@ -54,7 +54,7 @@ public class Film extends GenericModel {
             inverseJoinColumns = @JoinColumn(name = "director_id"), inverseForeignKey = @ForeignKey(name = "FK_DIRECTORS_FILMS"))
     List<Director> directors;
 
-    @OneToMany(mappedBy = "film")
+    @OneToMany(mappedBy = "film", cascade = {CascadeType.PERSIST, CascadeType.MERGE}) // cascade = {CascadeType.PERSIST, CascadeType.MERGE}
     private List<FilmRentInfo> filmRentInfos;
 
     @OneToMany(mappedBy = "film"/*, cascade = {CascadeType.PERSIST, CascadeType.MERGE}*/)
