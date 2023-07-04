@@ -36,7 +36,7 @@ public class Film extends GenericModel {
 
     //@Column(name = "imdb", nullable = false)
     @Column(name = "imdb")
-    private String imdb;
+    private String IMDB;
 
     @Column(name = "online_copy_path")
     private String onlineCopyPath;

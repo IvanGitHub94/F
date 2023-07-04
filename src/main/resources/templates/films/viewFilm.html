@@ -92,12 +92,11 @@
             <h4 class="mt-3 mb-3" th:text="'Отзывы:'"></h4>
             <div th:each="feedback : ${film.getFeedbacks()}">
                 <div class="mb-2 row">
-                    <p for="fio" class="col-sm-2 col-form-label">Пользователь:</p>
+                    <p for="fio" class="col-sm-2 col-form-label"><b>Пользователь:</b></p>
 
                     <div class="col-sm-10">
-                        <p th:text="${feedback.getNickname()}" class="form-control-plaintext">
+                        <p style="color:#06b2cc" th:text="${feedback.getNickname()}" class="form-control-plaintext">
                     </div>
-
 
                 </div>
                 <div class="mb-2 row">
@@ -113,6 +112,7 @@
                     </div>
                 </div>
             </div>
+            <hr class="hr"/>
         </form>
         <div class="mt-2">
             <a th:if="${film.getAmount() > 0}" sec:authorize="!hasRole('ADMIN')" class="btn btn-primary"
