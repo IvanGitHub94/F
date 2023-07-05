@@ -26,7 +26,7 @@ public class Director extends GenericModel {
     @Column(name = "description")
     private String description;
 
-    @ManyToMany/*(cascade = {CascadeType.PERSIST, CascadeType.MERGE})*/
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JsonIgnore
     //@JoinTable(name = "film_directors", film было без s
     @JoinTable(name = "films_directors",

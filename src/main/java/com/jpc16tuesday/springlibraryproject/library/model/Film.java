@@ -48,7 +48,7 @@ public class Film extends GenericModel {
     @Enumerated
     private Genre genre;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany/*(cascade = {CascadeType.PERSIST, CascadeType.MERGE})*/
     @JoinTable(name = "films_directors",
             joinColumns = @JoinColumn(name = "film_id"), foreignKey = @ForeignKey(name = "FK_FILMS_DIRECTORS"),
             inverseJoinColumns = @JoinColumn(name = "director_id"), inverseForeignKey = @ForeignKey(name = "FK_DIRECTORS_FILMS"))
