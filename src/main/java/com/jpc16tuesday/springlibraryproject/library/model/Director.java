@@ -28,7 +28,7 @@ public class Director extends GenericModel {
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JsonIgnore
-    //@JoinTable(name = "film_directors", film было без s
+    //@JoinTable(name = "film_directors",
     @JoinTable(name = "films_directors",
             joinColumns = @JoinColumn(name = "director_id"), foreignKey = @ForeignKey(name = "FK_DIRECTORS_FILMS"),
             inverseJoinColumns = @JoinColumn(name = "film_id"), inverseForeignKey = @ForeignKey(name = "FK_FILMS_DIRECTORS"))
