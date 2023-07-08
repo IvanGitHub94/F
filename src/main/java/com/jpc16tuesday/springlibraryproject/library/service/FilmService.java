@@ -78,6 +78,14 @@ public class FilmService
         return film;
     }
 
+    public FilmDTO updateFilm(final Long filmId, FilmDTO filmDTO) {
+        FilmDTO film = getOne(filmId);
+
+        filmDTO.setDirectorIds(film.getDirectorIds());
+        update(filmDTO);
+        return film;
+    }
+
     @Override
     public void deleteSoft(final Long id) throws MyDeleteException {
         Film film = repository.findById(id).orElseThrow(() -> new NotFoundException("Фильм не найден"));

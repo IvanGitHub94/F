@@ -41,11 +41,11 @@ public class MVCDirectorControllerTest
 
     @Override
     @Test
-    @DisplayName("Просмотр всех авторов через MVC контроллер")
+    @DisplayName("Просмотр всех режиссеров через MVC контроллер")
     @Order(0)
     @WithAnonymousUser
     protected void listAll() throws Exception {
-        log.info("Тест просмотра авторов MVC начат!");
+        log.info("Тест просмотра режиссеров MVC начат!");
         MvcResult result = mvc.perform(MockMvcRequestBuilders.get("/directors")
                         .param("page", "1")
                         .param("size", "5")
@@ -72,10 +72,10 @@ public class MVCDirectorControllerTest
     @Override
     @Test
     @Order(1)
-    @DisplayName("Создание автора через MVC контроллер")
+    @DisplayName("Создание режиссера через MVC контроллер")
     @WithMockUser(username = "admin", roles = "ADMIN", password = "admin")
     protected void createObject() throws Exception {
-        log.info("Тест по созданию автора через MVC начат");
+        log.info("Тест по созданию режиссера через MVC начат");
         mvc.perform(MockMvcRequestBuilders.post("/directors/add")
                         .contentType(MediaType.APPLICATION_JSON)
                         .flashAttr("directorForm", directorDTO)
@@ -86,16 +86,16 @@ public class MVCDirectorControllerTest
                 .andExpect(view().name("redirect:/directors"))
                 .andExpect(redirectedUrlTemplate("/directors"))
                 .andExpect(redirectedUrl("/directors"));
-        log.info("Тест по созданию автора через MVC закончен!");
+        log.info("Тест по созданию режиссера через MVC закончен!");
     }
 
     @Order(2)
     @Test
-    @DisplayName("Обновление автора через MVC контроллер")
+    @DisplayName("Обновление режиссера через MVC контроллер")
     @WithMockUser(username = "admin", roles = "ADMIN", password = "admin")
     //@WithUserDetails(userDetailsServiceBeanName = "customUserDetailsService", value = "andy_user")
     protected void updateObject() throws Exception {
-        log.info("Тест по обновлению автора через MVC начат успешно");
+        log.info("Тест по обновлению режиссера через MVC начат успешно");
         PageRequest pageRequest = PageRequest.of(0, 5, Sort.by(Sort.Direction.ASC, "directorFIO"));
         DirectorDTO foundDirectorForUpdate = directorService.searchDirectors(directorDTO.getDirectorFIO(), pageRequest).getContent().get(0);
         foundDirectorForUpdate.setDirectorFIO(directorDTOUpdated.getDirectorFIO());
@@ -108,12 +108,12 @@ public class MVCDirectorControllerTest
                 .andExpect(status().is3xxRedirection())
                 .andExpect(view().name("redirect:/directors"))
                 .andExpect(redirectedUrl("/directors"));
-        log.info("Тест по обновлению автора через MVC закончен успешно");
+        log.info("Тест по обновлению режиссера через MVC закончен успешно");
     }
 
     @Order(3)
     @Test
-    @DisplayName("Софт удаление автора через MVC контроллер, тестирование 'directors/delete'")
+    @DisplayName("Софт удаление режиссера через MVC контроллер, тестирование 'directors/delete'")
     @WithMockUser(username = "admin", roles = "ADMIN", password = "admin")
     @Override
     protected void deleteObject() throws Exception {

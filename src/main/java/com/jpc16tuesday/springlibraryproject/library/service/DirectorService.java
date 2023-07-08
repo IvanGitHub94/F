@@ -3,6 +3,7 @@ package com.jpc16tuesday.springlibraryproject.library.service;
 import com.jpc16tuesday.springlibraryproject.library.constants.Errors;
 import com.jpc16tuesday.springlibraryproject.library.dto.AddFilmDTO;
 import com.jpc16tuesday.springlibraryproject.library.dto.DirectorDTO;
+import com.jpc16tuesday.springlibraryproject.library.dto.FilmDTO;
 import com.jpc16tuesday.springlibraryproject.library.exception.MyDeleteException;
 import com.jpc16tuesday.springlibraryproject.library.mapper.DirectorMapper;
 import com.jpc16tuesday.springlibraryproject.library.model.Director;
@@ -30,6 +31,14 @@ public class DirectorService
         director.getFilmsIds().add(addFilmDTO.getFilmId());
         update(director);
         return director;
+    }
+
+    public DirectorDTO updateDirector(final Long directorId, DirectorDTO directorDTO) {
+        DirectorDTO director = getOne(directorId);
+
+        directorDTO.setFilmsIds(director.getFilmsIds());
+        update(directorDTO);
+        return directorDTO;
     }
 
     public Page<DirectorDTO> searchDirectors(final String fio,

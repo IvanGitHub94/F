@@ -81,16 +81,22 @@ public class MVCFilmController {
     }
 
 
-    @GetMapping("/update/{id}")
-    public String update(@PathVariable Long id,
+    //@GetMapping("/update/{id}")
+    @GetMapping("/update/{filmId}")
+    public String update(@PathVariable("filmId") Long filmId,
                          Model model) {
-        model.addAttribute("film", filmService.getOne(id));
+        model.addAttribute("film", filmService.getOne(filmId));
+        model.addAttribute("film_id", filmId);
         return "films/updateFilm";
     }
 
-    @PostMapping("/update")
-    public String update(@ModelAttribute("filmForm") FilmDTO filmDTO) {
-        filmService.update(filmDTO);
+    //@PostMapping("/update")
+    @PostMapping("/update/{filmId}")
+    public String update(@ModelAttribute("filmForm") FilmDTO filmDTO,
+                         @PathVariable("filmId") Long filmId) {
+        //filmService.update(filmDTO);
+        System.out.println("ID фильма: " + filmId);
+        filmService.updateFilm(filmId, filmDTO);
         return "redirect:/films";
     }
 

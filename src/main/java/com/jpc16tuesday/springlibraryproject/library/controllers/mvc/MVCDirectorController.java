@@ -67,17 +67,23 @@ public class MVCDirectorController {
         directorService.create(directorDTO);
         return "redirect:/directors";
     }
-    
-    @GetMapping("/update/{id}")
-    public String update(@PathVariable Long id,
+
+    //@GetMapping("/update/{id}")
+    @GetMapping("/update/{directorId}")
+    public String update(@PathVariable("directorId") Long directorId,
                          Model model) {
-        model.addAttribute("director", directorService.getOne(id));
+        model.addAttribute("director", directorService.getOne(directorId));
+        model.addAttribute("director_id", directorId);
         return "directors/updateDirector";
     }
     
-    @PostMapping("/update")
-    public String update(@ModelAttribute("directorForm") DirectorDTO directorDTO) {
-        directorService.update(directorDTO);
+    //@PostMapping("/update")
+    @PostMapping("/update/{directorId}")
+    public String update(@ModelAttribute("directorForm") DirectorDTO directorDTO,
+                         @PathVariable("directorId") Long directorId) {
+
+        //directorService.update(directorDTO);
+        directorService.updateDirector(directorId, directorDTO);
         return "redirect:/directors";
     }
     

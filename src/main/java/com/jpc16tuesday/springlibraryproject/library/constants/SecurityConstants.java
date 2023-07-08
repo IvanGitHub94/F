@@ -29,6 +29,7 @@ public interface SecurityConstants {
             "/directors/{id}");
     List<String> FILMS_PERMISSION_LIST = List.of("/films/add",
             "/films/update",
+            "/films/update/{filmId}",
             "/films/delete",
             "/films/download/{filmId}");
 
