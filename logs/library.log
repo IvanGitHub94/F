@@ -1,38 +1,38 @@
-2023-07-08 21:59:05,305 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-07-08 21:59:05,374 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SpringLibraryProjectApplication using Java 17.0.6 with PID 3176 (C:\Java\SberCourse\PRO\FILMS\springlibraryproject-996db336b6bf109bd3826a777de51f4b4843f782\SpringLibraryProjectTU\target\classes started by User in C:\Java\SberCourse\PRO\FILMS\springlibraryproject-996db336b6bf109bd3826a777de51f4b4843f782\SpringLibraryProjectTU)
-2023-07-08 21:59:05,385 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "prod"
-2023-07-08 21:59:05,959 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-08 21:59:05,961 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-08 21:59:07,853 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-08 21:59:08,008 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 140 ms. Found 5 JPA repository interfaces.
-2023-07-08 21:59:09,458 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
-2023-07-08 21:59:09,476 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
-2023-07-08 21:59:09,478 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2023-07-08 21:59:09,478 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-07-08 21:59:09,607 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-07-08 21:59:09,610 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3644 ms
-2023-07-08 21:59:09,933 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-08 21:59:10,027 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-07-08 21:59:10,521 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-07-08 21:59:10,795 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5062dd5d
-2023-07-08 21:59:10,798 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-07-08 21:59:10,872 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2023-07-08 21:59:11,342 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
-2023-07-08 21:59:11,365 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
-2023-07-08 21:59:11,404 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
-2023-07-08 21:59:11,420 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
-2023-07-08 21:59:13,012 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-08 21:59:13,032 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-08 21:59:15,704 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-07-08 21:59:15,842 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
-2023-07-08 21:59:17,979 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55389d12, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53d3b249, org.springframework.security.web.context.SecurityContextHolderFilter@72932957, org.springframework.security.web.header.HeaderWriterFilter@6ec48204, org.springframework.security.web.authentication.logout.LogoutFilter@6e341bbd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1675deab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@778863b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50c9c62d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bebae1e, org.springframework.security.web.access.ExceptionTranslationFilter@236fd2a7, org.springframework.security.web.access.intercept.AuthorizationFilter@4128e8b4]
-2023-07-08 21:59:18,596 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2023-07-08 21:59:18,622 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
-2023-07-08 21:59:18,658 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
-2023-07-08 21:59:18,680 INFO o.s.b.StartupInfoLogger [restartedMain] Started SpringLibraryProjectApplication in 14.074 seconds (process running for 16.285)
-2023-07-08 21:59:24,922 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-08 21:59:24,922 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
-2023-07-08 21:59:24,924 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
-2023-07-08 22:00:31,506 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-07-08 22:00:31,511 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-07-08 22:00:31,517 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-07-09 10:33:13,330 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-07-09 10:33:13,478 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SpringLibraryProjectApplication using Java 17.0.6 with PID 7156 (C:\Java\SberCourse\PRO\FILMS\springlibraryproject-996db336b6bf109bd3826a777de51f4b4843f782\SpringLibraryProjectTU\target\classes started by User in C:\Java\SberCourse\PRO\FILMS\springlibraryproject-996db336b6bf109bd3826a777de51f4b4843f782\SpringLibraryProjectTU)
+2023-07-09 10:33:13,496 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "prod"
+2023-07-09 10:33:14,613 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-09 10:33:14,615 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-09 10:33:17,739 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-09 10:33:17,987 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 216 ms. Found 5 JPA repository interfaces.
+2023-07-09 10:33:19,924 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-07-09 10:33:19,958 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2023-07-09 10:33:19,961 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-07-09 10:33:19,962 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-07-09 10:33:20,188 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-09 10:33:20,194 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5571 ms
+2023-07-09 10:33:20,657 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-09 10:33:20,806 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-07-09 10:33:21,568 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-07-09 10:33:21,985 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@479d9aee
+2023-07-09 10:33:21,992 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-07-09 10:33:22,106 INFO o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-09 10:33:22,854 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
+2023-07-09 10:33:22,872 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
+2023-07-09 10:33:22,918 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
+2023-07-09 10:33:22,956 WARN o.h.b.i.InFlightMetadataCollectorImpl [restartedMain] HHH000069: Duplicate generator name default_generator
+2023-07-09 10:33:25,063 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-09 10:33:25,080 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-09 10:33:29,274 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-09 10:33:29,589 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-07-09 10:33:32,727 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4481d4a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e341bbd, org.springframework.security.web.context.SecurityContextHolderFilter@35c4aae5, org.springframework.security.web.header.HeaderWriterFilter@668af61a, org.springframework.security.web.authentication.logout.LogoutFilter@4d022767, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5330c2e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d0f9bfb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bec3360, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bc6a311, org.springframework.security.web.access.ExceptionTranslationFilter@7cfce291, org.springframework.security.web.access.intercept.AuthorizationFilter@40dd5850]
+2023-07-09 10:33:33,783 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-09 10:33:33,818 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2023-07-09 10:33:33,875 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-09 10:33:33,912 INFO o.s.b.StartupInfoLogger [restartedMain] Started SpringLibraryProjectApplication in 21.924 seconds (process running for 25.093)
+2023-07-09 10:33:37,373 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 10:33:37,374 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-09 10:33:37,381 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 5 ms
+2023-07-09 10:34:39,015 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-09 10:34:39,053 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-07-09 10:34:39,085 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
